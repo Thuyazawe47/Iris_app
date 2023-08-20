@@ -32,7 +32,6 @@ if st.button("Check Flower Type"):
         st.write("Flower is Iris-verginia")
     else:
         st.write("Flower is Iris-versicolor")
-    
     st.image(img,Caption="iris_flowers")
     
     
