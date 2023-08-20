@@ -24,15 +24,16 @@ if st.button("Check Flower Type"):
     num_values=np.asarray(num_values).reshape(1,-1)
     predictions=get_model().predict(num_values)
     predictions=int(predictions)
-    
+    img='irir_flowers.png'
     if predictions==0:
+        
         st.write("Flower is Iris-Sentosa") 
     elif predictions==1:
         st.write("Flower is Iris-verginia")
     else:
         st.write("Flower is Iris-versicolor")
     
-    
+    st.image(img,Caption="iris_flowers")
     
     
     
